@@ -1,67 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>James Igwe</title>
-</head>
-<body>
-
-  <h1>Hello, I’m James Igwe</h1>
-  <p>This is my personal landing page.</p>
-
-  <p>
-    Contact me:
-    <a href="mailto:your@email.com">your@email.com</a>
-  </p>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Igwe James</title>
   <style>
+    /* General Styles */
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
       color: #333;
-      text-align: center;
-      padding: 50px;
+      line-height: 1.6;
     }
 
-    h1 {
-      color: #ff6600;
+    a {
+      text-decoration: none;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(to right, #ff7e5f, #feb47b);
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 10px 0 20px 0;
     }
 
     .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #333;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 20px;
+      background-color: #fff;
+      color: #ff7e5f;
+      padding: 12px 25px;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: 0.3s;
     }
 
-    .section {
-      margin: 50px 0;
+    .btn:hover {
+      background-color: #ff7e5f;
+      color: white;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #ff7e5f;
+      margin-bottom: 20px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background-color: #ffe0d6;
+      color: #ff7e5f;
+      padding: 8px 15px;
+      margin: 5px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>Hello, I’m Igwe James</h1>
-  <p>Welcome to my personal landing page.</p>
-  <a href="mailto:your@email.com" class="btn">Contact Me</a>
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Hi, I’m Igwe James</h1>
+    <p>Creating modern and clean personal websites</p>
+    <a href="#contact" class="btn">Contact Me</a>
+  </div>
 
-  <div class="section">
+  <!-- About Section -->
+  <section id="about">
     <h2>About Me</h2>
-    <p>I am a passionate individual who loves creating things online.</p>
-  </div>
+    <p>I am a passionate individual who loves building websites and sharing knowledge online. I enjoy learning new technologies and improving my skills every day.</p>
+  </section>
 
-  <div class="section">
+  <!-- Skills Section -->
+  <section id="skills">
     <h2>Skills</h2>
-    <p>Web Design | HTML | CSS | GitHub Pages</p>
-  </div>
+    <div class="skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>GitHub Pages</span>
+      <span>Web Design</span>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email me at <a href="mailto:your@email.com">your@email.com</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 Igwe James
+  </footer>
 
 </body>
 </html>
