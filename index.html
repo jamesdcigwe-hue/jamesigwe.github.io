@@ -101,7 +101,24 @@
   <div class="hero">
     <h1>Hi, I’m James DC </h1>
     <p>A Tech personnel and Dream Chaser </p>
-    <a href="#contact" class="btn">Contact Me</a>
+    <a href="#contact" class="btn">Contact Me</a><section id="contact" style="padding: 60px 20px; background: #111; color: white;">
+  <h2 style="text-align:center;">Contact Me</h2>
+
+  <form action="https://formspree.io/f/xlglogea" method="POST" style="max-width:500px;margin:40px auto;display:flex;flex-direction:column;gap:15px;">
+    
+    <input type="text" name="name" placeholder="Your Name" required style="padding:12px;border-radius:6px;border:none;">
+    
+    <input type="email" name="email" placeholder="Your Email" required style="padding:12px;border-radius:6px;border:none;">
+    
+    <textarea name="message" placeholder="Your Message" required style="padding:12px;border-radius:6px;border:none;height:120px;"></textarea>
+    
+    <button type="submit" style="padding:14px;border:none;border-radius:25px;background:#ff7e5f;color:white;font-size:16px;cursor:pointer;">
+      Send Message
+    </button>
+
+  </form>
+</section>
+
 
 
   Contact Me
@@ -131,18 +148,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
-  <h2>Contact Me</h2>
-
-  <form action=https://formspree.io/f/xlglogea method="POST" class="contact-form">
-    
-    <input type="text" name="name" placeholder="Your Name" required>
-
-    <input type="email" name="email" placeholder="Your Email" required>
-
-    <textarea name="message" placeholder="Your Message" required></textarea>
-
-    <button type="submit">Send Message</button>
+  
 
   </form>
 </section> {
@@ -268,20 +274,3 @@
   }
 </style>
 
-<section id="contact" style="padding: 60px 20px; background: #111; color: white;">
-  <h2 style="text-align:center;">Contact Me</h2>
-
-  <form action="https://formspree.io/f/xlglogea" method="POST" style="max-width:500px;margin:40px auto;display:flex;flex-direction:column;gap:15px;">
-    
-    <input type="text" name="name" placeholder="Your Name" required style="padding:12px;border-radius:6px;border:none;">
-    
-    <input type="email" name="email" placeholder="Your Email" required style="padding:12px;border-radius:6px;border:none;">
-    
-    <textarea name="message" placeholder="Your Message" required style="padding:12px;border-radius:6px;border:none;height:120px;"></textarea>
-    
-    <button type="submit" style="padding:14px;border:none;border-radius:25px;background:#ff7e5f;color:white;font-size:16px;cursor:pointer;">
-      Send Message
-    </button>
-
-  </form>
-</section>
