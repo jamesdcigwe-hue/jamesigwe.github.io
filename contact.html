@@ -24,11 +24,17 @@
   <h1>Contact Me</h1>
   
   <!-- Embed Freshdesk Form Here -->
-<script type="text/javascript" src="https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.js"></script>
-<style type="text/css" media="screen, projection">
-	@import url(https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.css); 
-</style> 
-<iframe title="Feedback Form" class="freshwidget-embedded-form" id="freshwidget-embedded-form" src="https://timersgreece.freshdesk.com/widgets/feedback_widget/new?&widgetType=embedded" scrolling="no" height="500px" width="100%" frameborder="0" >
-</iframe>
+ <script>
+function initFreshdesk() {
+  window.fdWidget.init({
+    token: "01KFBXZWD65F5MFFA0TVX63FFY",
+    host: "https://timersgreece.freshdesk.com",
+    widgetId: "01KFTMGX0E9FR1NYTQBGNXYFPM"
+  });
+}
+
+function initialize(i,t){var e;i.getElementById(t)?initFreshdesk():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://timersgreece.freshdesk.com/webchat/js/widget.js",e.onload=initFreshdesk,i.head.appendChild(e))}function initiateCall(){initialize(document,"Freshdesk-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+</script>
+
 </body>
 </html>
